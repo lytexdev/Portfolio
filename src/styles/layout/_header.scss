@@ -20,6 +20,19 @@ header {
             gap: 20px;
             font-size: 20px;
         }
+
+        .darkmode-toggle {
+            background: none !important;
+            border: none;
+            font: inherit;
+            cursor: pointer;
+            position: sticky !important;
+            padding: 0;
+
+            svg, path {
+                stroke: darken($secondary-color, 10%);
+            }
+        }
     }
 
     

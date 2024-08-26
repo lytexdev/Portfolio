@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "darkmode-js": "^1.5.7",
     "sass": "^1.77.8",
     "vue": "^3.4.37"
   },

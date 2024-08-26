@@ -17,6 +17,7 @@ body {
 a {
   color: $secondary-color;
   text-decoration: none;
+  isolation: isolate;
   transition: color $transition-speed $transition-ease;
 
   &:hover {
@@ -27,6 +28,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: $primary-color;
+  isolation: isolate;
 }
 
 h1 {
