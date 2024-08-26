@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Moderustic', sans-serif;
+    background-color: $background-color;
+    color: $foreground-color;
+    font-size: $base-font-size;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    max-width: 1444.444px; /* hehehehe */
+    margin: 0 auto;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+  transition: color $transition-speed $transition-ease;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: $primary-color;
+}
+
+h1 {
+  font-size: $heading-font-size;
+}
+
+h2 {
+  font-size: $subheading-font-size;
+}
