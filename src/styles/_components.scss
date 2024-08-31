@@ -1,17 +1,17 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Moderustic', sans-serif;
-    background-color: $background-color;
-    color: $foreground-color;
-    font-size: $base-font-size;
+  margin: 0;
+  padding: 0;
+  font-family: "Moderustic", sans-serif;
+  background-color: $background-color;
+  color: $foreground-color;
+  font-size: $base-font-size;
 }
 
 #app {
-    display: flex;
-    flex-direction: column;
-    max-width: 1444.444px; /* hehehehe */
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1444.44px; /* hehehehe */
+  margin: 0 auto;
 }
 
 a {
@@ -25,7 +25,7 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-weight: bold;
   color: $primary-color;
   isolation: isolate;
@@ -37,4 +37,97 @@ h1 {
 
 h2 {
   font-size: $subheading-font-size;
+}
+
+.btn {
+  background-color: $secondary-color;
+  border: none;
+  color: #000;
+  padding: 0.65em 1.35em;
+  font-size: $base-font-size;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color $transition-speed $transition-ease, color $transition-speed $transition-ease;
+  border-radius: 5px;
+  isolation: isolate;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+    color: $background-color;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($primary-color, 0.5);
+  }
+
+  &:active {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+
+  a {
+    color: #000;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  background-color: $background-color;
+  color: $foreground-color;
+  border: 1px solid $border-color;
+  padding: 0.6em 1em;
+  font-size: $base-font-size;
+  border-radius: 5px;
+  transition: border-color $transition-speed $transition-ease, box-shadow $transition-speed $transition-ease;
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 3px rgba($primary-color, 0.5);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: lighten($foreground-color, 30%);
+  }
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+label {
+  font-weight: bold;
+  color: $foreground-color;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+::selection {
+  background-color: $secondary-color;
+  color: #000;
+  isolation: isolate;
+}
+
+::-moz-selection {
+  background-color: $secondary-color;
+  color: #000;
+}
+
+::-o-selection {
+  background-color: $secondary-color;
+  color: #000;
+}
+
+::-webkit-selection {
+  background-color: $secondary-color;
+  color: #000;
+}
+
+::-ms-selection {
+  background-color: $secondary-color;
+  color: #000;
 }

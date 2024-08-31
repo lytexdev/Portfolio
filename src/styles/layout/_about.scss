@@ -1,0 +1,141 @@
+#about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5rem;
+
+    .about-head {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 2.35em;
+            margin-right: 9rem;
+        }
+
+        img {
+            border-radius: 15%;
+        }
+
+        .social-media-icons {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            background-color: lighten($background-color, 15%);
+            padding: 0.5rem 0.75rem;
+            border-radius: 15%;
+
+            a { 
+                &:hover {
+                    transition: 0.2s;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .about-text {
+        width: 50%;
+        font-size: 1.35em;
+
+        .animated-text-wrapper  {
+            font-size: 1.9em;
+        }
+
+        .animated-text {
+            color: $primary-color;
+            text-decoration: underline;
+            animation: fade-in-out 3s ease-in-out infinite;
+            margin: 0;
+        }
+
+        @keyframes fade-in-out {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        padding-bottom: 3rem;
+
+        .about-head {
+            order: 0;
+
+            h2 {
+                font-size: 2em;
+                margin: 0;
+            }
+
+            .about-avatar {
+                display: none;
+            }
+        }
+
+        .about-text {
+            order: 2;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 4rem;
+
+    .skills-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5em;
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+
+    .skill {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    h4 {
+        color: #fff;
+        margin: 0;
+    }
+
+    b {
+        color: #d1d1d1;
+        font-size: 1.35rem;
+        margin-bottom: 2.5rem;
+    }
+
+    h3 {
+        flex: 1;
+        margin: 0;
+        padding: 0 1em;
+        cursor: default;
+        color: #fff;
+
+        &:hover {
+            transition: 0.2s;
+            transform: scale(1.1);
+        }
+    }
+}
