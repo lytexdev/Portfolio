@@ -1,8 +1,7 @@
 # Portfolio
 
-## Description
-
-My Portfolio website built with Vue.js & Vite.
-
 ## Live-Demo
-[*soon*](https://lytex.dev)
+[lytex.dev](https://lytex.dev)
+
+## Description
+My Portfolio website built with Vue.js
