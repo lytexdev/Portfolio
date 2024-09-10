@@ -1,8 +1,8 @@
 #about {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 5rem;
+    padding-bottom: 5.35rem;
 
     .about-head {
         display: flex;
@@ -11,10 +11,6 @@
         h2 {
             font-size: 2.35em;
             margin-right: 9rem;
-        }
-
-        img {
-            border-radius: 15%;
         }
 
         .social-media-icons {
@@ -126,16 +122,30 @@
         margin-bottom: 2.5rem;
     }
 
-    h3 {
+    a {
         flex: 1;
         margin: 0;
         padding: 0 1em;
-        cursor: default;
-        color: #fff;
+        cursor: pointer;
+        color: #545454;
 
         &:hover {
             transition: 0.2s;
-            transform: scale(1.1);
+
+            &.python { color: #234b6b; }
+            &.vuejs { color: #35b87d; }
+            &.nuxt { color: #00ff95; }
+            &.flask { color: #1b6d74; }
+            &.flask { color: #1b6d74; }
+            &.django { color: #0802c0; }
+            &.shopware { color: #189eff; }
+            &.bootstrap { color: #890bfc; }
+            &.scss { color: #cd6699; }
+            &.javascript { color: #f1d30c; }
+            &.git { color: #fc2a05; }
+            &.docker { color: #008cff; }
+            &.nodejs { color: #8BC34A; }
+            &.linux { color: #000; }
         }
     }
 }

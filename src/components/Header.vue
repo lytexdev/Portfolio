@@ -68,7 +68,7 @@ const isDarkMode = ref(true)
 const darkmodeInstance = ref(false)
 
 const options = {
-    mixColor: '#f5f3f2 ',
+    mixColor: '#fff ',
     backgroundColor: 'unset',
     saveInCookies: false,
     autoMatchOsTheme: false,

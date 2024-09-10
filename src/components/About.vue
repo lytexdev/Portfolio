@@ -9,12 +9,10 @@
                 Schwerpunkt auf der Entwicklung von Webseiten und Online-Shops.<br>
                 Zusätzlich beschäftige ich mich leidenschaftlich viel mit meinem Arch Linux Home-Server.
             </p>
-
             <button class="btn">
                 <a href="#contact">Kontakt</a>
             </button>
         </div>
-
         <div class="about-head">
             <div>
                 <h2>Über mich</h2>
@@ -31,73 +29,89 @@
                     </a>
                 </div>
             </div>
-            <img class="about-avatar" src="../assets/images/logo.png" alt="lytex avatar" height="301" />
         </div>
     </section>
-
     <hr>
-
     <section id="skills">
         <h4>Meine Skills</h4>
         <b>(oder zumindest was ich benutze)</b>
-
         <div class="skills-row">
             <div class="skill">
-                <h3 style="color:#234b6b">Python</h3>
+                <h3>
+                    <a href="https://www.python.org/" target="_blank" class="python">Python</a>
+                </h3>
             </div>
             <div class="skill">
-                <h3 style="color:#35b87d">Vue.js</h3>
+                <h3>
+                    <a href="https://www.djangoproject.com/" target="_blank" class="django">Django</a>
+                </h3>
             </div>
             <div class="skill">
-                <h3 style="color:#00ff95">Nuxt</h3>
+                <h3>
+                    <a href="https://flask.palletsprojects.com/" target="_blank" class="flask">Flask</a>
+                </h3>
             </div>
         </div>
         <div class="skills-row">
             <div class="skill">
-                <h3 style="color:#1b6d74">Flask</h3>
+                <h3>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                        class="javascript">JavaScript</a>
+                </h3>
             </div>
             <div class="skill">
-                <h3 style="color:#189eff">Shopware</h3>
+                <h3>
+                    <a href="https://vuejs.org/" target="_blank" class="vuejs">Vue.js</a>
+                </h3>
             </div>
             <div class="skill">
-                <h3 style="color:#890bfc">Bootstrap</h3>
-            </div>
-        </div>
-        <div class="skills-row">
-            <div class="skill">
-                <h3 style="color:#cd6699">SCSS</h3>
-            </div>
-            <div class="skill">
-                <h3 style="color:#f1d30c">JavaScript</h3>
-            </div>
-            <div class="skill">
-                <h3><span style="color:#f16529">HTML</span> & <span style="color:#3498DB">CSS</span></h3>
+                <h3>
+                    <a href="https://nuxt.com/" target="_blank" class="nuxt">Nuxt</a>
+                </h3>
             </div>
         </div>
         <div class="skills-row">
             <div class="skill">
-                <h3 style="color:#fc2a05">Git</h3>
+                <h3>
+                    <a href="https://www.shopware.com/" target="_blank" class="shopware">Shopware</a>
+                </h3>
             </div>
             <div class="skill">
-                <h3 style="color:#008cff">Docker</h3>
+                <h3>
+                    <a href="https://sass-lang.com/" target="_blank" class="scss">SCSS</a>
+                </h3>
             </div>
             <div class="skill">
-                <h3 style="color:#8BC34A">Node.js</h3>
+                <h3>
+                    <a href="https://getbootstrap.com/" target="_blank" class="bootstrap">Bootstrap</a>
+                </h3>
             </div>
         </div>
         <div class="skills-row">
             <div class="skill">
-                <h3 style="color:#1793D1">Arch Linux</h3>
+                <h3>
+                    <a href="https://git-scm.com/" target="_blank" class="git">Git</a>
+                </h3>
             </div>
             <div class="skill">
-                <h3 style="color:#E95420">Ubuntu</h3>
+                <h3>
+                    <a href="https://www.docker.com/" target="_blank" class="docker">Docker</a>
+                </h3>
             </div>
             <div class="skill">
-                <h3 style="color:#A81D33">Debian</h3>
+                <h3>
+                    <a href="https://nodejs.org/" target="_blank" class="nodejs">Node.js</a>
+                </h3>
+            </div>
+        </div>
+        <div class="skills-row">
+            <div class="skill">
+                <h3>
+                    <a href="https://www.linux.org/" target="_blank" class="linux">Linux</a>
+                </h3>
             </div>
         </div>
     </section>
-
     <hr>
 </template>
 
