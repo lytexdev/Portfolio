@@ -25,13 +25,9 @@ a {
   }
 }
 
-h1, h2 {
-  font-weight: bold;
-  color: $primary-color;
-  isolation: isolate;
-}
-
 h1 {
+  isolation: isolate;
+  color: $primary-color;
   font-size: $heading-font-size;
 }
 
@@ -44,7 +40,7 @@ h2 {
   border: none;
   color: #000;
   padding: 0.65em 1.35em;
-  font-size: $base-font-size;
+  font-size: 1em;
   font-weight: bold;
   cursor: pointer;
   transition: background-color $transition-speed $transition-ease, color $transition-speed $transition-ease;

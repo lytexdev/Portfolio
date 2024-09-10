@@ -7,7 +7,7 @@
             <p>
                 Derzeit absolviere ich eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung, mit dem
                 Schwerpunkt auf der Entwicklung von Webseiten und Online-Shops.<br>
-                Zusätzlich beschäftige ich mich leidenschaftlich viel mit meinem Arch Linux Home-Server.
+                Zusätzlich beschäftige ich mich leidenschaftlich viel mit meinem Home-Server.
             </p>
             <button class="btn">
                 <a href="#contact">Kontakt</a>
@@ -18,8 +18,8 @@
                 <h2>Über mich</h2>
 
                 <div class="social-media-icons">
-                    <a href="https://github.com/ximmanuel/" target="_blank" title="Github: ximmanuel">
-                        <img src="../assets/images/icons/github.svg" alt="Github: ximmanuel" height="42px">
+                    <a href="https://github.com/lytexdev/" target="_blank" title="Github: lytexdev">
+                        <img src="../assets/images/icons/github.svg" alt="Github: lytexdev" height="42px">
                     </a>
                     <a href="https://www.instagram.com/ximmanuelm/" target="_blank" title="Instagram: ximmanuelm">
                         <img src="../assets/images/icons/instagram.svg" alt="Instagram: ximmanuelm" height="42px">
@@ -115,38 +115,33 @@
     <hr>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            texts: [
-                "Immanuel Mruk",
-                "17 Jahre alt",
-                "angehender Fachinformatiker",
-                "fullstack Webentwickler",
-                "Linux-Enthusiast",
-                "Cybersecurity-Verfechter",
-                "Privacy-Freak",
-                "Koffein-Suchti",
-                "lytex",
-                "großer Fan von FOSS",
-                "Computer-Nerd",
-                "Kaffee-Liebhaber"
-            ],
-            currentText: "Immanuel Mruk",
-            textIndex: 0,
-        };
-    },
-    mounted() {
-        this.startTextRotation();
-    },
-    methods: {
-        startTextRotation() {
-            setInterval(() => {
-                this.textIndex = (this.textIndex + 1) % this.texts.length;
-                this.currentText = this.texts[this.textIndex];
-            }, 3000);
-        },
-    },
-};
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const texts = ref([
+  "Immanuel Mruk",
+  "lytex",
+  "17 Jahre alt",
+  "angehender Fachinformatiker",
+  "fullstack Webentwickler",
+  "Linux-Enthusiast",
+  "Privacy-Freak",
+  "Koffein-Suchti",
+  "großer Fan von FOSS",
+  "Computer-Geek",
+]);
+const currentText = ref("Immanuel Mruk");
+const textIndex = ref(0);
+
+onMounted(() => {
+  startTextRotation();
+  getDarkMode();
+});
+
+function startTextRotation() {
+  setInterval(() => {
+    textIndex.value = (textIndex.value + 1) % texts.value.length;
+    currentText.value = texts.value[textIndex.value];
+  }, 3000);
+}
 </script>

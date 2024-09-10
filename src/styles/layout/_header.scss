@@ -20,6 +20,11 @@ header {
             list-style: none;
             gap: 20px;
             font-size: 20px;
+
+            a {
+                isolation: unset;
+                color: darken($foreground-color, 10%);
+            }
         }
 
         .darkmode-toggle {
@@ -29,10 +34,6 @@ header {
             cursor: pointer;
             position: sticky !important;
             padding: 0;
-
-            svg, path {
-                stroke: darken($secondary-color, 10%);
-            }
         }
     }
 
